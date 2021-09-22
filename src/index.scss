@@ -1,0 +1,38 @@
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// FONT VARIABLES
+$serif: 'Playfair Display', serif;
+$sans-serif: 'Montserrat', sans-serif;
+// COLOR VARIABLES 
+$blue-dark: rgb(44, 91, 104);
+$blue-bright: rgb(22, 123, 150);
+$green-primary: rgb(107, 116, 90);
+$green-dark: rgb(73, 73, 51);
+$green-light: rgb(166, 171, 153);
+$light-primary: rgb(223, 201, 200);
+$light-light: rgb(231, 209, 208);
+$light-dark: rgb(179, 141, 130);
+$orange-primary: rgb(184, 119, 95);
+$orange-dark: rgb(152, 91, 62);
+
+body, nav {
+  background-color: $light-primary;
+}
+
+nav {
+  h1 {
+  font-family: $serif;
+  color: $green-primary;
+}
+
+.nav-link {
+  color: $green-primary;
+  font-family: $sans-serif;
+  margin-left: 2rem;
+}
+.nav-link:hover {
+  color: $green-dark;
+  text-decoration: underline;
+}
+}
