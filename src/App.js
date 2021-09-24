@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import WebFont from 'webfontloader';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import Landing from './components/Landing';
+import About from './components/About';
+import Work from './components/Work';
+import Contact from './components/Contact';
 
 function App() {
   // import google fonts
@@ -13,11 +16,37 @@ function App() {
     })
   })
 
+  const [aboutSelected, setAboutSelected] = useState(false);
+  const [workSelected, setWorkSelected] = useState(false);
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
-    <Nav></Nav>
-    <Main></Main>
+    <Nav
+    aboutSelected={aboutSelected}
+    setAboutSelected={setAboutSelected}
+    workSelected={workSelected}
+    setWorkSelected={setWorkSelected}
+    contactSelected={contactSelected}
+    setContactSelected={setContactSelected}
+    ></Nav>
+    <main>
+      {aboutSelected ? (
+        <>
+        <About></About>
+        </>
+      ) : workSelected ? (
+        <>
+        <Work></Work>
+        </>
+      ) : contactSelected ? (
+        <>
+        <Contact></Contact>
+        </>
+      ) : (
+        <Landing></Landing>
+      )}
+    </main>
     </div>
   )
 }

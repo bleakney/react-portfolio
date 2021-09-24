@@ -2,10 +2,10 @@ import React from 'react';
 
 function Landing () {
     return (
-        <div class="landing-page">
+        <div className="landing-page">
             <h1>Full-Stack</h1>
             <h1>Web Developer</h1>
-            <div class="stack-container">
+            <div className="stack-container">
             <h2>MongoDB</h2>
             <h2>&#10042;</h2>
             <h2>Express</h2>
