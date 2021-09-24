@@ -3,11 +3,11 @@ import Landing from '../Landing';
 import About from '../About';
 
 function Main () {
-    const [currentContent, setContent] = useState(mainContent[0]);
     const mainContent = [Landing, About];
+    const [currentContent, setContent] = useState(mainContent[0]);
     return (
         <main>
-            {mainContent}
+            <About></About>
         </main>
     )
 }

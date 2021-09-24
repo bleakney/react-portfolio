@@ -2,7 +2,7 @@ import React from 'react';
 
 function Landing () {
     return (
-        <div class="landing-screen">
+        <div class="landing-page">
             <h1>Full-Stack</h1>
             <h1>Web Developer</h1>
             <div class="stack-container">
