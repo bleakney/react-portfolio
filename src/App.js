@@ -16,6 +16,7 @@ function App() {
     })
   })
 
+  // set up state hooks for conditional rendering of <main> section content
   const [aboutSelected, setAboutSelected] = useState(false);
   const [workSelected, setWorkSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
