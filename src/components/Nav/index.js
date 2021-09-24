@@ -5,7 +5,7 @@ function Nav() {
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <h1>// Bleakney Bissett</h1>
+          <a href="/"><h1>// Bleakney Bissett</h1></a>
           <div className="navbar-nav justify-content-end collapse navbar-collapse">
             <a className="nav-link" href="#work">
               WORK

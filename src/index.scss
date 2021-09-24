@@ -12,27 +12,64 @@ $green-dark: rgb(73, 73, 51);
 $green-light: rgb(166, 171, 153);
 $light-primary: rgb(223, 201, 200);
 $light-light: rgb(231, 209, 208);
+$light-lightest: rgb(248, 241, 240);
 $light-dark: rgb(179, 141, 130);
 $orange-primary: rgb(184, 119, 95);
 $orange-dark: rgb(152, 91, 62);
 
 body, nav {
-  background-color: $light-primary;
-}
-
-nav {
-  h1 {
-  font-family: $serif;
+  background-color: $light-dark;
   color: $green-primary;
 }
 
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $serif;
+  color: $green-primary;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+nav {
+border-bottom: .5px solid $orange-primary;
+.navbar {
+  padding-bottom: $navbar-padding-y;
+}
 .nav-link {
   color: $green-primary;
   font-family: $sans-serif;
   margin-left: 2rem;
 }
-.nav-link:hover {
-  color: $green-dark;
-  text-decoration: underline;
+.nav-link:hover, h1:hover, .nav-link:focus, h1:focus {
+  color: $green-primary;
+  text-shadow: 1px .5px $orange-dark;
 }
+}
+
+.landing-screen {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  h1 {
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px $orange-primary;
+    font-weight: 700;
+  }
+  .stack-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  h2 {
+    font-family: $sans-serif;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-shadow: 1px 1px $light-light;
+  }
 }

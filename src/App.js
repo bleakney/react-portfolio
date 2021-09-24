@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import WebFont from 'webfontloader';
 import Nav from './components/Nav';
+import Main from './components/Main';
 
 function App() {
   // import google fonts
@@ -14,7 +15,10 @@ function App() {
 
 
   return (
+    <div>
     <Nav></Nav>
+    <Main></Main>
+    </div>
   )
 }
 
