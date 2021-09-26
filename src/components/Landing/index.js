@@ -1,6 +1,12 @@
 import React from 'react';
 
-function Landing () {
+function Landing (props) {
+    const {
+        setAboutSelected,
+        setContactSelected,
+        setWorkSelected
+    } = props;
+
     return (
         <div className="landing-page">
             <h1>Full-Stack</h1>
@@ -14,6 +20,9 @@ function Landing () {
             <h2>&#10042;</h2>
             <h2>Node</h2>
             </div>
+            <div className="section-link-container">
+      <h4><span onClick={() => {setAboutSelected(true); setContactSelected(false); setWorkSelected(false);}}>about me &#10547;</span></h4>
+      </div>
         </div>
     )
 };

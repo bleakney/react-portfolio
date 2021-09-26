@@ -146,19 +146,19 @@ border-bottom: .5px solid $orange-primary;
   margin-left: 7rem;
   margin-right: 7rem;
 }
-.deployment-container {
-h4, a {
+.section-link-container {
+h4, a, span {
   text-align: center;
   text-decoration: none;
   color: $green-primary;
   margin-top: 1.5rem;
 }
-a {
+a, span {
   border: 1px solid $green-primary;
   border-radius: 3px;
   padding: .5rem;
 }
-a:hover {
+a:hover, span:hover {
   background-color: $green-primary;
   color: $light-dark;
 }

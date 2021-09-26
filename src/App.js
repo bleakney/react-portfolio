@@ -45,7 +45,11 @@ function App() {
         <Contact></Contact>
         </>
       ) : (
-        <Landing></Landing>
+        <Landing
+        setAboutSelected={setAboutSelected}
+        setWorkSelected={setWorkSelected}
+        setContactSelected={setContactSelected}
+        ></Landing>
       )}
     </main>
     </div>

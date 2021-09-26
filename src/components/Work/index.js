@@ -44,7 +44,7 @@ function Work() {
           </Carousel.Caption>
         </Carousel.Item> */}
       </Carousel>
-      <div className="deployment-container">
+      <div className="deployment-container section-link-container">
       <h4><a href={deploymentLinks[index]}>view deployment</a></h4>
       </div>
       </div>
