@@ -34,28 +34,30 @@ function Contact() {
   };
 
     return (
-        <section>
-          <h1 data-testid="h1tag">Contact me</h1>
+        <section className="main-section">
+          <h1>Contact me</h1>
+          <div className="form-container">
           <form id="contact-form" onSubmit={submitFormHandler}>
             <div>
-              <label htmlFor="name">Name:</label>
-              <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+              {/* <label htmlFor="name">Name:</label> */}
+              <input type="text" name="name" placeholder="name" defaultValue={name} onBlur={handleChange} />
             </div>
             <div>
-              <label htmlFor="email">Email address:</label>
-              <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+              {/* <label htmlFor="email">Email address:</label> */}
+              <input type="email" name="email" placeholder="email@website.com" defaultValue={email} onBlur={handleChange} />
             </div>
             <div>
-              <label htmlFor="message">Message:</label>
-              <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+              {/* <label htmlFor="message">Message:</label> */}
+              <textarea name="message" rows="5" defaultValue={message} placeholder='"Love your work", "Please let us interview you", "You seem like a great potential employee", e.g.' onBlur={handleChange} />
             </div>
             {errorMessage && (
               <div>
                 <p className="error-text">{errorMessage}</p>
               </div>
             )}
-            <button data-testid="button" type="submit">Submit</button>
+            <button className="btn submit-btn" type="submit">Submit</button>
           </form>
+          </div>
         </section>
       );
 };

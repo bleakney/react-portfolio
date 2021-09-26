@@ -9,6 +9,8 @@ function Work() {
     };
   
     return (
+        <section className="main-section">
+            <h1>Work</h1>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img
@@ -48,6 +50,7 @@ function Work() {
           </Carousel.Caption>
         </Carousel.Item> */}
       </Carousel>
+      </section>
     );
   }
 

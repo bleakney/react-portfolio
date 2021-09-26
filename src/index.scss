@@ -51,6 +51,15 @@ border-bottom: .5px solid $orange-primary;
 }
 }
 
+.main-section {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .landing-page {
   display: flex;
   flex-direction: column;
@@ -93,5 +102,33 @@ border-bottom: .5px solid $orange-primary;
   }
   p {
     flex-grow: 2;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #contact-form {
+  border: 1px solid $green-primary;
+  border-radius: 3px;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 33%;
+  justify-content: space-apart;;
+
+  input, textarea, button {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid $green-primary;
+    margin-bottom: 1rem;
+  }
+  button:hover {
+    background-color: $green-primary;
+    color: $light-primary;
+  }
+  button {
+    color: $green-primary;
+  }
   }
 }
