@@ -5,6 +5,7 @@ import Landing from './components/Landing';
 import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   // import google fonts
@@ -52,6 +53,7 @@ function App() {
         ></Landing>
       )}
     </main>
+    <Footer></Footer>
     </div>
   )
 }

@@ -17,6 +17,10 @@ $light-dark: rgb(179, 141, 130);
 $orange-primary: rgb(184, 119, 95);
 $orange-dark: rgb(152, 91, 62);
 
+body {
+ position: relative;
+}
+
 body, nav {
   background-color: $light-dark;
   color: $green-primary;
@@ -162,4 +166,24 @@ a:hover, span:hover {
   background-color: $green-primary;
   color: $light-dark;
 }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  img {
+    margin: 1rem;
+    filter: invert(43%) sepia(29%) saturate(259%) hue-rotate(39deg) brightness(95%) contrast(92%);
+    width: 1.5rem;
+    height: auto;
+  }
+
 }
