@@ -77,6 +77,21 @@ border-bottom: .5px solid $orange-primary;
 }
 
 .about-page {
-  margin: 4rem 2rem 0 2rem;
+  margin: 4rem 5rem 0 5rem;
+}
 
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  align-content: center;
+  img {
+    flex-grow: 1;
+    width: 33%;
+    height: auto;
+    margin-left: 2rem;
+  }
+  p {
+    flex-grow: 2;
+  }
 }
