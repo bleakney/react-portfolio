@@ -1,28 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
-function Work () {
+function Work() {
+    const [index, setIndex] = useState(0);
+  
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    };
+  
     return (
-        <div className="work-section">
-            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="../../images/broadcastr.png" default className="d-block w-100" alt="broadcastr app" />
-    </div>
-    <div className="carousel-item">
-      <img src="../../images/movie-date.png" default className="d-block w-100" alt="Movie Date app" />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-        </div>
-    )
-};
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./images/broadcastr.png"
+            alt="broadcastr app"
+          />
+          {/* <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./images/movie-date.png"
+            alt="love calc"
+          />
+  
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        {/* <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=Third slide&bg=20232a"
+            alt="Third slide"
+          />
+  
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item> */}
+      </Carousel>
+    );
+  }
 
 export default Work;
