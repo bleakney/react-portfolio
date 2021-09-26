@@ -7,10 +7,13 @@ function Work() {
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
+
+    const deploymentLinks = ['https://broadcastrs.herokuapp.com/', 'https://danielolvera21.github.io/movie_date/index.html']
   
     return (
         <section className="main-section">
             <h1>Work</h1>
+            <div className="carousel-container">
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img
@@ -18,22 +21,13 @@ function Work() {
             src="./images/broadcastr.png"
             alt="broadcastr app"
           />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src="./images/movie-date.png"
-            alt="love calc"
+            alt="movie date"
           />
-  
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         {/* <Carousel.Item>
           <img
@@ -50,6 +44,10 @@ function Work() {
           </Carousel.Caption>
         </Carousel.Item> */}
       </Carousel>
+      <div className="deployment-container">
+      <h4><a href={deploymentLinks[index]}>view deployment</a></h4>
+      </div>
+      </div>
       </section>
     );
   }

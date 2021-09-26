@@ -52,6 +52,7 @@ border-bottom: .5px solid $orange-primary;
 }
 
 .main-section {
+  margin: 4rem 5rem 4rem 5rem;
   h1 {
     text-align: center;
     font-size: 2rem;
@@ -83,10 +84,6 @@ border-bottom: .5px solid $orange-primary;
     padding-right: 1rem;
     text-shadow: 1px 1px $light-light;
   }
-}
-
-.about-page {
-  margin: 4rem 5rem 0 5rem;
 }
 
 .about-container {
@@ -131,4 +128,26 @@ border-bottom: .5px solid $orange-primary;
     color: $green-primary;
   }
   }
+}
+
+.carousel-container {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.deployment-container {
+h4, a {
+  text-align: center;
+  text-decoration: none;
+  color: $green-primary;
+  margin-top: 1.5rem;
+}
+a {
+  border: 1px solid $green-primary;
+  border-radius: 3px;
+  padding: .5rem;
+}
+a:hover {
+  background-color: $green-primary;
+  color: $light-dark;
+}
 }
