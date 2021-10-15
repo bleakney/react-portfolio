@@ -8,7 +8,7 @@ function Work() {
       setIndex(selectedIndex);
     };
 
-    const deploymentLinks = ['https://broadcastrs.herokuapp.com/', 'https://danielolvera21.github.io/movie_date/index.html']
+    const deploymentLinks = ['https://broadcastrs.herokuapp.com/', 'https://danielolvera21.github.io/movie_date/index.html', 'https://tranquil-garden-66594.herokuapp.com/'];
   
     return (
         <section className="main-section">
@@ -27,6 +27,13 @@ function Work() {
             className="d-block w-100"
             src="./images/movie-date.png"
             alt="movie date"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="./images/free-maps.png"
+            alt="free maps"
           />
         </Carousel.Item>
         {/* <Carousel.Item>
